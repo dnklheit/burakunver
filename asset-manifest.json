@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/burakunver/static/css/main.afc02289.css",
+    "main.js": "/burakunver/static/js/main.607a791d.js",
+    "index.html": "/burakunver/index.html",
+    "main.afc02289.css.map": "/burakunver/static/css/main.afc02289.css.map",
+    "main.607a791d.js.map": "/burakunver/static/js/main.607a791d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.afc02289.css",
+    "static/js/main.607a791d.js"
+  ]
+}
