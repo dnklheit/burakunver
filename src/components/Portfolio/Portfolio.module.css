@@ -1,0 +1,139 @@
+.portfolio {
+    background-color: var(--bg-light2);
+    padding: 3rem 36px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.title h2 {
+    color: #222;
+    text-align: center;
+    font-size: 23px;
+}
+
+.cards {
+    display: grid;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2.5rem auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* Min genişlik artırıldı */
+    gap: 5rem;
+    list-style: none;
+}
+
+.cards li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.cards li:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 16px 32px rgba(0, 0, 0, 0.2);
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.cards .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #444;
+    transform: translateY(100%);
+    transition: 0.3s ease-in-out;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cards li:hover .card-overlay {
+    transform: translateY(0);
+}
+
+.cards .card-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    transform: translateY(0);
+    transition: 0.3s ease-in-out;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cards li:hover .card-header {
+    transform: translateY(0);
+}
+
+.cards .card-content a {
+    background: linear-gradient(45deg, #3498db, #6f7bff);
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 16px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.cards .card-title {
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 12px;
+    z-index: 2;
+    color: #222;
+}
+
+.cards .card-description {
+    font-size: 1.2rem;
+    padding: 0 1rem 1rem;
+    margin: 0;
+    overflow: hidden;
+    color: #555;
+}
+
+/* Küçük ekranlar için medya sorgusu */
+
+@media screen and (max-width: 767px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+        gap: 1rem;
+    }
+    .portfolio {
+        padding: 2rem 18px;
+    }
+}
+
+/* Orta ekranlar için medya sorgusu */
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+/* Daha büyük ekranlar için medya sorgusu */
+
+@media screen and (min-width: 1200px) {
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        /* Min genişlik artırıldı */
+        gap: 3rem;
+    }
+}

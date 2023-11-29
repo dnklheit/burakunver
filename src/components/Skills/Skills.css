@@ -1,0 +1,140 @@
+/* Skills.css */
+
+.skills-section {
+    background: linear-gradient(to bottom right, #1a1a2e, #172a45);
+    /* Linear gradient arka plan rengi */
+    padding: 5rem 36px;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Yeni eklenen: Eğer çok sayıda skill varsa, bir alt satıra geçmesini sağlar */
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navigation button:hover {
+    background-color: #45a049;
+}
+
+.skill-item {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-item:hover {
+    transform: scale(1.2);
+}
+
+.skill-item li:first-child {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.skill-item li:last-child {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Renk Tanımlamaları */
+
+.react {
+    color: #61dafb;
+    background-color: #282c34;
+    /* Dark background to enhance contrast */
+}
+
+.vue {
+    color: #41b883;
+    background-color: #34495e;
+    /* Dark blue-gray background */
+}
+
+.next {
+    color: #000000;
+    background-color: #ffffff;
+    /* White background for black text */
+}
+
+.tailwind {
+    color: #38b2ac;
+    background-color: #2d3748;
+    /* Slightly darker gray background */
+}
+
+.sass {
+    color: #cc6699;
+    background-color: #ffffff;
+    /* White background for pink text */
+}
+
+.python {
+    color: #306998;
+    background-color: #f8f9fa;
+    /* Light gray background */
+}
+
+.nlp {
+    color: #663399;
+    background-color: #f5e1ff;
+    /* Light purple background */
+}
+
+.lda {
+    color: #211199;
+    background-color: #d9d2e9;
+    /* Light lavender background */
+}
+
+.seaborn {
+    color: #4F7CAC;
+    background-color: #364156;
+    /* Dark background for contrast */
+}
+
+.matplot {
+    color: #FF4F00;
+    background-color: #2a2a2a;
+    /* Dark gray background */
+}
+
+/* Yeni eklenen: Ekran genişliği 768px'in altına düştüğünde stil değişiklikleri */
+
+@media screen and (max-width: 768px) {
+    .skills {
+        flex-direction: column;
+        /* Skill'leri dikey olarak düzenle */
+        align-items: stretch;
+        /* Yeni eklenen: Skill'leri genişlik boyunca uzat */
+    }
+    .skill-item {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

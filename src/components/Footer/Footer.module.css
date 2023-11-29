@@ -1,0 +1,146 @@
+.footer {
+    color: #fff;
+    background: linear-gradient( #111120, #0d192b);
+    padding: 2.5rem;
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.flex img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    padding: 15px;
+    color: #fff;
+    transition: color 0.5s;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #3498db;
+}
+
+.icons a {
+    color: #fff;
+    margin: 0 15px;
+}
+
+.icons a:hover {
+    color: #3498db;
+}
+
+.icons a {
+    margin-right: 10px;
+    color: #fff;
+}
+
+/* GitHub logosu için renk tanımı */
+
+.icons a[href=""]>svg {
+    color: rgb(236, 53, 53);
+    padding-top: 3px;
+}
+
+.icons a[href*="github"]>svg {
+    color: #fff;
+}
+
+/* Instagram logosu için renk tanımı */
+
+.icons a[href*="instagram"]>svg {
+    color: #e4405f;
+    /* Instagram rengi: Kırmızı tonu */
+}
+
+/* LinkedIn logosu için renk tanımı */
+
+.icons a[href*="linkedin"]>svg {
+    color: #0077b5;
+    /* LinkedIn rengi: Mavi tonu */
+}
+
+.icons a[href=""]>svg:hover {
+    transform: scale(1.2);
+    padding-top: 3px;
+}
+
+.icons a[href*="github"]>svg:hover {
+    transform: scale(1.2);
+}
+
+.icons a[href*="instagram"]>svg:hover {
+    transform: scale(1.2);
+}
+
+.icons a[href*="linkedin"]>svg:hover {
+    transform: scale(1.2);
+}
+
+/* Ekran genişliği 480px ve altında */
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 1.5rem;
+    }
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .pages {
+        display: flex;
+        flex-direction: column;
+    }
+    .flex img {
+        max-width: 80px;
+        /* İstediğiniz genişliği ayarlayabilirsiniz */
+        max-height: 80px;
+        /* İstediğiniz yüksekliği ayarlayabilirsiniz */
+        margin-bottom: 10px;
+    }
+    .footer ul li a {
+        padding: 10px;
+        /* İstediğiniz iç boşluğu ayarlayabilirsiniz */
+    }
+    .icons a {
+        margin: 0 10px;
+        /* İstediğiniz iç boşluğu ayarlayabilirsiniz */
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .flex {
+        flex-direction: row;
+    }
+    .flex img {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer {
+        font-size: 1.2rem;
+    }
+}

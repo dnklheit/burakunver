@@ -1,0 +1,97 @@
+/* Cards.module.css */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content {
+    flex-grow: 1;
+}
+
+.card-type {
+    font-size: 14px;
+    color: #fff;
+}
+
+.card-title {
+    font-size: 18px;
+    color: #fff;
+    margin: 8px 0;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #222;
+    padding: 7.5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card a:hover {
+    color: #ffd700;
+    /* Change the color to your preferred hover color */
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsive design */
+
+@media screen and (min-width: 768px) {
+    .card {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .card {
+        max-width: 600px;
+    }
+}
