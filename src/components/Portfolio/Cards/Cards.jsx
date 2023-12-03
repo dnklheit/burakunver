@@ -1,40 +1,40 @@
-import styles from './Cards.module.css';
-import { Link } from 'react-router-dom';
+import styles from "./Cards.module.css";
+import { Link } from "react-router-dom";
 
 const CustomLink = ({ to, children }) => {
   return (
-    <Link to={to}>
+    <a href={to} target="_blank" rel="noopener noreferrer">
       {children}
-    </Link>
+    </a>
   );
 };
 
-const Cards = ({ image, title, level, type, description, link }) => {
-    const linq = 'https://alakazam-alpha.vercel.app';
+const Cards = ({ image, title, technologies, description, link }) => {
+ 
 
   return (
     <li>
-        <div className={styles.card}>
-            <img src={image} alt='' />
-            <div className={styles['card-overlay']}>
-                <div className={styles['card-header']}>
-                  
-                   <div className={styles['card-content']}>
-                    <h3 className={styles['card-title']}>{title}</h3>
-                    <h3 className={styles['card-type']}>Level: {level}</h3>
-                </div>
+      <div className={styles.card}>
+        <img src={image} alt="" />
+        <div className={styles["card-overlay"]}>
+          <div className={styles["card-header"]}>
+            <div className={styles["card-content"]}>
+              <h3 className={styles["card-title"]}>{title}</h3>
+              <h3 className={styles["card-type"]}>
+                <span className={styles['card-tech']}> {technologies}</span>{" "}
+              </h3>
             </div>
-            <p className={styles['card-description']}>
+          </div>
+          <p className={styles["card-description"]}>
             {description}
-            <br/>
-            <CustomLink to={linq}>Check it</CustomLink>
-
-            </p>
-
+            <br />
+            <br />
+            <CustomLink to={link}>Check it</CustomLink>
+          </p>
         </div>
-        </div>
+      </div>
     </li>
-      );
+  );
 };
 
 export default Cards;

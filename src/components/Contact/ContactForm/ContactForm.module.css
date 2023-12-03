@@ -3,18 +3,12 @@
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    /* Daha büyük yazı boyutu */
     border-radius: 12px;
-    /* Daha yuvarlatılmış köşeler */
     line-height: 18px;
-    /* Artan çizgi yüksekliği */
     border: 1px solid #222;
     padding: 12px;
-    /* Daha büyük iç boşluklar */
     margin-top: 12px;
-    /* Artan üst boşluk */
     margin-bottom: 12px;
-    /* Daha az alt boşluk */
     width: 500px;
     outline: none;
     box-sizing: border-box;
@@ -30,25 +24,20 @@
 
 .textarea {
     height: 200px;
-    /* Daha yüksek textarea yüksekliği */
     line-height: 200px;
-    /* Daha büyük textarea çizgi yüksekliği */
     resize: vertical;
 }
 
 .button {
     font-family: 'Josefin Sans', sans-serif;
     width: 150px;
-    /* Daha geniş buton */
     height: 40px;
-    /* Daha yüksek buton */
     background-color: #444;
     color: #fff;
     border-radius: 12px;
     border: 0;
     cursor: pointer;
     font-size: 16px;
-    /* Daha büyük yazı boyutu */
     padding: 10px;
     transition: all 0.3s;
 }
@@ -74,46 +63,31 @@
     font-size: 14px;
 }
 
-/* Ekran genişliği 768px ve altında */
 
 @media screen and (max-width: 768px) {
     .form-control> :nth-child(odd) {
         width: 100%;
-        /* 100% genişlik */
         margin-top: 8px;
-        /* Daha az üst boşluk */
         margin-bottom: 8px;
-        /* Daha az alt boşluk */
     }
 }
 
-/* Ekran genişliği 480px ve altında */
 
 @media screen and (max-width: 480px) {
     .form-control> :nth-child(odd) {
         width: 100%;
-        /* 100% genişlik */
         margin-top: 8px;
-        /* Daha az üst boşluk */
         margin-bottom: 8px;
-        /* Daha az alt boşluk */
         font-size: 14px;
-        /* Daha küçük yazı boyutu */
         padding: 10px;
-        /* Daha küçük iç boşluklar */
     }
     .textarea {
         height: 120px;
-        /* Daha düşük textarea yüksekliği */
         line-height: 120px;
-        /* Daha küçük textarea çizgi yüksekliği */
     }
     .button {
         width: 100%;
-        /* 100% genişlik */
         height: 36px;
-        /* Daha düşük buton yüksekliği */
         font-size: 14px;
-        /* Daha küçük yazı boyutu */
     }
 }

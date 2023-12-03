@@ -73,15 +73,10 @@
 
 .border {
     border-bottom: 2px solid #000;
-    /* Adjust the border properties as needed */
     max-width: 200px;
-    /* Set a maximum width for the border */
     width: 100%;
-    /* Ensure the border takes up the full width within the container */
     margin: 0 auto;
-    /* Center the border within the container */
     margin-bottom: 20px;
-    /* Add margin to create space between the border and the cards */
 }
 
 .heading h3 {
@@ -104,11 +99,7 @@
     }
 }
 
-/* Media Queries */
 
-/* Küçük ekranlar için medya sorgusu */
-
-/* Ekran genişliği 768px ve altında */
 
 @media screen and (max-width: 768px) {
     .contact {
@@ -144,9 +135,7 @@
     .phone-icon,
     .mail-icon,
     .loc-marker {
-        /* İkonların ortalanması için gerekli stil eklemeleri */
         margin-bottom: 0.5rem;
-        /* İkonlar arasına biraz boşluk bırakabilirsiniz */
     }
     .border {
         margin-bottom: 1rem;
@@ -157,7 +146,6 @@
     }
 }
 
-/* Ekran genişliği 480px ve altında */
 
 @media screen and (max-width: 480px) {
     .contact {

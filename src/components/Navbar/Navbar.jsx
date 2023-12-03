@@ -91,7 +91,6 @@ const Navbar = () => {
             behavior: 'smooth',
           });
       
-          // Menüyü kapatmak için
           setShowLinks(false);
         }
       };
@@ -102,57 +101,64 @@ const Navbar = () => {
 
 
 
-  return ( 
-  <header className={styles.header}>
-   <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : '' }`}>
-    <div className='container'>
-     <div className={styles["navbar-wrapper"]}>
-     <div>
-     <div className={styles.icons}>
-    
-                    <a href='https://github.com/dnklheit'>
-                        <BsGithub className='ghub' size={20} />
-                    </a>
-                    <a href='https://www.linkedin.com/in/burak-ünver/'>
-                        <BsLinkedin  className='link' size={20} />
-                    </a>   
-                    <a href='https://instagram.com/dnklheit/'>
-                        <BsInstagram className='insta' size={20} />
-                    </a>
-                        
-            
-                    </div>
-     </div>
-     <div className={`${styles['navbar-links']} ${
-        showLinks ? styles.show : ''
-     }`}
-     >
-     <ul>
-       {navLinks.map(link => (
-        <NavBarLinks 
-            key={link.id}
-            href={`#${link.id}`}
-            label={link.label}
-            onClick={handleSectionClick}
-            active={activeSection === link.id}
-
-        />
-       ))}
-     </ul>
-     </div>
-     {windowWidth <= 899 && (
-        <div className={`${styles['toggle-button']} ${showLinks ? styles.open : ''}`} onClick={toggleLinks}>
-  <span className={styles.line}></span>
-  <span className={styles.line}></span>
-  <span className={styles.line}></span>
-  <FaTimes className={`${styles['close-icon']}`} onClick={toggleLinks} />
-</div>
-     )}
-    </div>   
-   </div>
- </nav>
-</header>
- );
+  return (
+    <header className={styles.header}>
+      <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ""}`}>
+        <div className="container">
+          <div className={styles["navbar-wrapper"]}>
+            <div>
+              <div className={styles.icons}>
+                <a href="https://github.com/dnklheit">
+                  <BsGithub className="ghub" size={20} />
+                </a>
+                <a
+                  href="https://linkedin.com/in/burakunver7"
+                >
+                  <BsLinkedin className="link" size={20} />
+                </a>
+                <a href="https://instagram.com/dnklheit/">
+                  <BsInstagram className="insta" size={20} />
+                </a>
+              </div>
+            </div>
+            <div
+              className={`${styles["navbar-links"]} ${
+                showLinks ? styles.show : ""
+              }`}
+            >
+              <ul>
+                {navLinks.map((link) => (
+                  <NavBarLinks
+                    key={link.id}
+                    href={`#${link.id}`}
+                    label={link.label}
+                    onClick={handleSectionClick}
+                    active={activeSection === link.id}
+                  />
+                ))}
+              </ul>
+            </div>
+            {windowWidth <= 899 && (
+              <div
+                className={`${styles["toggle-button"]} ${
+                  showLinks ? styles.open : ""
+                }`}
+                onClick={toggleLinks}
+              >
+                <span className={styles.line}></span>
+                <span className={styles.line}></span>
+                <span className={styles.line}></span>
+                <FaTimes
+                  className={`${styles["close-icon"]}`}
+                  onClick={toggleLinks}
+                />
+              </div>
+            )}
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
 };
 
 export default Navbar;

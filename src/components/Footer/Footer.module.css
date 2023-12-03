@@ -55,7 +55,6 @@
     color: #fff;
 }
 
-/* GitHub logosu için renk tanımı */
 
 .icons a[href=""]>svg {
     color: rgb(236, 53, 53);
@@ -66,18 +65,14 @@
     color: #fff;
 }
 
-/* Instagram logosu için renk tanımı */
 
 .icons a[href*="instagram"]>svg {
     color: #e4405f;
-    /* Instagram rengi: Kırmızı tonu */
 }
 
-/* LinkedIn logosu için renk tanımı */
 
 .icons a[href*="linkedin"]>svg {
     color: #0077b5;
-    /* LinkedIn rengi: Mavi tonu */
 }
 
 .icons a[href=""]>svg:hover {
@@ -97,7 +92,6 @@
     transform: scale(1.2);
 }
 
-/* Ekran genişliği 480px ve altında */
 
 @media screen and (max-width: 480px) {
     .footer {
@@ -114,18 +108,14 @@
     }
     .flex img {
         max-width: 80px;
-        /* İstediğiniz genişliği ayarlayabilirsiniz */
         max-height: 80px;
-        /* İstediğiniz yüksekliği ayarlayabilirsiniz */
         margin-bottom: 10px;
     }
     .footer ul li a {
         padding: 10px;
-        /* İstediğiniz iç boşluğu ayarlayabilirsiniz */
     }
     .icons a {
         margin: 0 10px;
-        /* İstediğiniz iç boşluğu ayarlayabilirsiniz */
     }
 }
 

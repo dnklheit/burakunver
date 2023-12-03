@@ -89,7 +89,6 @@ h6 {
     z-index: 100;
 }
 
-/* Responsive tasarım için media query ekleyin */
 
 @media screen and (max-width: 768px) {
     .list,
@@ -103,7 +102,6 @@ h6 {
     }
 }
 
-/* Ayrıca, her iki bileşenin içindeki listelerin genişliklerini ayarlamak için şu CSS'i ekleyebilirsiniz */
 
 .list,
 .list2 {

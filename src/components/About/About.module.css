@@ -132,7 +132,6 @@
     }
 }
 
-/* Medya sorguları ile responsive tasarım */
 
 @media screen and (max-width: 768px) {
     .about {
@@ -150,7 +149,6 @@
     }
 }
 
-/* Büyük ekranlar için */
 
 @media screen and (min-width: 1201px) {
     .aboutContent {
@@ -158,9 +156,7 @@
     }
 }
 
-/* ... Diğer stiller ... */
 
-/* Daha büyük ekranlar için */
 
 @media screen and (min-width: 1601px) {
     .aboutContent {
@@ -168,4 +164,3 @@
     }
 }
 
-/* ... Diğer stiller ... */

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./About.module.css";
+import svg from './softskills.svg'
 import Reveal from "../Reveal/Reveal";
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
         }deg)`;
         rotationRef.current.rotation = (rotationRef.current.rotation || 0) + 1;
       }
-    }, 30); // Adjust the interval as needed
+    }, 30); 
 
     return () => clearInterval(rotateInterval);
   }, []);
@@ -26,7 +27,9 @@ const About = () => {
               <div
                 className={`${styles.softskills} ${styles.rotation}`}
                 ref={rotationRef}
-              ></div>
+              >
+                <img src={svg} alt="svg" />
+              </div>
               <div className={styles.circle}>
                 <div className={styles.content}>
                   <img src="./images/burak4.jpg" alt="Burak" />

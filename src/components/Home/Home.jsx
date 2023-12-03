@@ -20,8 +20,7 @@ const Home = () => {
         }deg)`;
         rotationRef.current.rotation = (rotationRef.current.rotation || 0) + 1;
       }
-    }, 30); // Adjust the interval as needed
-
+    }, 30); 
     return () => clearInterval(rotateInterval);
   }, []);
 
@@ -72,8 +71,8 @@ const Home = () => {
               <div className={styles.content}>
                 <img src="./images/burak4.jpg" alt="Burak" />
                 <a
-                  href="./images/BurakCV.pdf"
-                  download="Burak_Unver_Jr_Data_Scientist.pdf"
+                  href="./BurakUnver_CV.pdf"
+                  download="BurakUnver_CV.pdf"
                 >
                   Download CV !
                 </a>

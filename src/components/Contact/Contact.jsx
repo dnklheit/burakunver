@@ -28,7 +28,7 @@ const Contact = () => {
             <div className={styles["contact-wrapper"]}>
               <HiOutlineMail className={styles["mail-icon"]} size={35} />
               <span>Email</span>
-              <h3>burakunv3r@gmail.com</h3>
+              <h3>burakunver.dev@gmail.com</h3>
               <div className={styles["contact-wrapper"]}>
                 <HiLocationMarker className={styles["loc-marker"]} size={38} />
                 <span>Location</span>

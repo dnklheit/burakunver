@@ -18,7 +18,7 @@ const Portfolio = () => {
             </div> 
             <ul className={styles.cards}>
             {cardData.map((item) => (
-                <Cards key={item.id} image={item.img}  title={item.title} level={item.level} description={item.description} link={item.link}/>
+                <Cards key={item.id} image={item.img}  title={item.title} technologies={item.technologies} description={item.description} link={item.link}/>
             ))}
             </ul>
         </div>
