@@ -1,13 +1,11 @@
 import React, { useRef, useEffect } from "react";
 import styles from "./Home.module.css";
 import Reveal from "../Reveal/Reveal";
-import {
-  FaReact,
-  FaArrowAltCircleRight,
-  FaVuejs,
-  FaPalette,
-  FaSass,
-} from "react-icons/fa";
+import { FaReact, FaVuejs, FaSass } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { SiNuxtdotjs } from "react-icons/si";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
 
 const Home = () => {
   const rotationRef = useRef(null);
@@ -20,7 +18,7 @@ const Home = () => {
         }deg)`;
         rotationRef.current.rotation = (rotationRef.current.rotation || 0) + 1;
       }
-    }, 30); 
+    }, 30);
     return () => clearInterval(rotateInterval);
   }, []);
 
@@ -34,7 +32,11 @@ const Home = () => {
                 <h2>Hey, I'm Burak</h2>
               </div>
               <div className={styles["text-wrapper"]}>
-                <p>Frontend Developer</p>
+                <p>
+                  Frontend Developer <br />
+                  <span>&& </span>
+                  Data Scientist
+                </p>
               </div>
 
               <div className={styles.links}>
@@ -49,16 +51,19 @@ const Home = () => {
               <div className={styles["icons"]}>
                 <div className={styles["icons-container"]}>
                   <FaReact className={styles["react"]} title="React" />
-                  <FaArrowAltCircleRight
-                    className={styles["next"]}
-                    title="Next.js"
-                  />
+                  <SiNextdotjs className={styles["next"]} title="Next.js" />
                   <FaVuejs className={styles["vue"]} title="Vue.js" />
-                  <FaPalette
+                  <SiNuxtdotjs className={styles["vue"]} title="Nuxt.js" />
+                  <FaSass className={styles["sass"]} title="Sass" />
+
+                  <SiTailwindcss
                     className={styles["tailwind"]}
                     title="Tailwind CSS"
                   />
-                  <FaSass className={styles["sass"]} title="Sass" />
+                  <FaBootstrap
+                    className={styles["bootstrap"]}
+                    title="Bootstrap"
+                  />
                 </div>
                 <div className={styles.scroll}>
                   <a a href="#contact">
@@ -70,10 +75,7 @@ const Home = () => {
             <div className={styles.circle}>
               <div className={styles.content}>
                 <img src="./images/burak4.jpg" alt="Burak" />
-                <a
-                  href="./BurakUnver_CV.pdf"
-                  download="BurakUnver_CV.pdf"
-                >
+                <a href="./BurakUnver_CV.pdf" download="BurakUnver_CV.pdf">
                   Download CV !
                 </a>
               </div>

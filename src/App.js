@@ -19,7 +19,7 @@ function App() {
         <Skills />
         <Portfolio />
         <Contact />
-      </main>{" "}
+      </main>
       <Footer />
     </>
   );

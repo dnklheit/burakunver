@@ -39,6 +39,10 @@
   font-weight: 600;
 }
 
+.text-wrapper span {
+  font-size: 1.2rem;
+  color: rgba(52, 152, 219, 0.9);
+}
 .icons-container {
   padding-top: 3.5rem;
   padding-bottom: 1.5rem;
@@ -77,6 +81,11 @@
   color: #cc6699;
 }
 
+.bootstrap {
+  transition: 0.2s ease-in-out;
+  color: #4267b2;
+}
+
 .icon:hover {
   transform: scale(1.2);
 }
@@ -98,6 +107,10 @@
 }
 
 .sass:hover {
+  transform: scale(1.2);
+}
+
+.bootstrap:hover {
   transform: scale(1.2);
 }
 
@@ -332,7 +345,6 @@
   }
 }
 
-
 @media screen and (max-width: 480px) {
   .home {
     height: auto;
@@ -371,8 +383,7 @@
     width: 200px;
     height: 200px;
   }
-  .content {
-  }
+
   .scroll {
     margin-left: 30px;
     margin-bottom: 30px;
@@ -418,7 +429,6 @@
     font-size: 2.5rem;
   }
 }
-
 
 @media screen and (min-width: 1201px) {
   .home-title h2 {

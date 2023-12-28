@@ -6,6 +6,7 @@ const ContactForm = () => {
   const [enteredEmail, setEnteredEmail] = useState("");
   const [enteredMessage, setEnteredMessage] = useState("");
   const [touchFields, setTouchedFields] = useState([]);
+  const [emailStatus, setEmailStatus] = useState(null);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -25,19 +26,8 @@ const ContactForm = () => {
     }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
-    setTouchedFields(["name", "email", "message"]);
-
-    if (
-      enteredName.trim() === "" ||
-      enteredEmail.trim() === "" ||
-      enteredMessage.trim() === "" ||
-      !emailIsValid(enteredEmail)
-    ) {
-      return;
-    }
 
     const formData = {
       name: enteredName,
@@ -45,12 +35,31 @@ const ContactForm = () => {
       message: enteredMessage,
     };
 
-    console.log(formData);
+    try {
+      const response = await fetch("http://localhost:3000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    setEnteredName("");
-    setEnteredEmail("");
-    setEnteredMessage("");
-    setTouchedFields([]);
+      if (response.ok) {
+        console.log("Email sent successfully");
+        setEmailStatus("success");
+      } else {
+        console.error(
+          "Failed to send email. Server responded with:",
+          response.statusText
+        );
+        setEmailStatus("error");
+      }
+    } catch (error) {
+      console.error("Error sending email", error);
+      setEmailStatus("error");
+    }
+
+    // Reset form fields if needed
   };
 
   const isFieldInvalid = (fieldName) => {
@@ -75,6 +84,14 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
+      {emailStatus === "success" && (
+        <p className={styles.success}>Email sent successfully!</p>
+      )}
+      {emailStatus === "error" && (
+        <p className={styles.error}>
+          Failed to send email. Please try again later.
+        </p>
+      )}
       <div
         className={`${styles["form-control"]} ${
           isFieldInvalid("name") && styles.invalid

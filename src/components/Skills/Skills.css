@@ -1,123 +1,141 @@
-
 .skills-section {
-    background: linear-gradient(to bottom right, #1a1a2e, #172a45);
-    padding: 5rem 36px;
+  background: linear-gradient(to bottom right, #1a1a2e, #172a45);
+  padding: 5rem 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.frontend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.datasci {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .navigation button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
 .navigation button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
 
 .skill-item {
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+  margin: 5px;
+  padding-top: 10px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
 .skill-item:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .skill-item li:first-child {
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 10px;
-    margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .skill-item li:last-child {
-    font-size: 1.5rem;
-    margin-right: 10px;
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
-
 .react {
-    color: #61dafb;
-    background-color: #282c34;
+  color: #61dafb;
+  background-color: #282c34;
 }
 
 .vue {
-    color: #41b883;
-    background-color: #34495e;
+  color: #41b883;
+  background-color: #34495e;
 }
 
 .next {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .tailwind {
-    color: #38b2ac;
-    background-color: #2d3748;
+  color: #38b2ac;
+  background-color: #2d3748;
 }
 
 .sass {
-    color: #cc6699;
-    background-color: #ffffff;
+  color: #cc6699;
+  background-color: #ffffff;
 }
 
 .python {
-    color: #306998;
-    background-color: #f8f9fa;
+  color: #306998;
+  background-color: #f8f9fa;
 }
 
 .nlp {
-    color: #663399;
-    background-color: #f5e1ff;
+  color: #663399;
+  background-color: #f5e1ff;
 }
 
 .lda {
-    color: #211199;
-    background-color: #d9d2e9;
+  color: #211199;
+  background-color: #d9d2e9;
 }
 
 .seaborn {
-    color: #4F7CAC;
-    background-color: #364156;
+  color: #4f7cac;
+  background-color: #364156;
 }
 
 .matplot {
-    color: #FF4F00;
-    background-color: #2a2a2a;
+  color: #ff4f00;
+  background-color: #2a2a2a;
+}
+.bootstrap {
+  color: #4267b2;
+  background-color: #f8f9fa;
 }
 
-
 @media screen and (max-width: 768px) {
-    .skills {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .skill-item {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+  .skills {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .skill-item {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
