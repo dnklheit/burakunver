@@ -5,6 +5,8 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaLanguage, FaChartLine, FaChartBar } from "react-icons/fa";
 import { DiPython } from "react-icons/di";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
 
 const cardData = [
   {
@@ -36,15 +38,15 @@ const cardData = [
   {
     id: "3",
 
-    title: "Calendar",
+    title: "Rayal Park Hotel Clone Website",
     technologies: [
-      <FaReact className="react" size={25} />,
-      <SiTailwindcss className="tailwind" size={25} />,
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
     ],
-    img: "./images/calendar.jpg",
+    img: "./images/rayal-park.jpg",
     description:
-      "Experience seamless organization and effortless scheduling with React and Tailwind-powered Calendar App.",
-    link: "https://dnklheit.github.io/calendar-app/",
+      "Discover a world of comfort, luxury, and adventure as you explore our curated selection of hotels, making every moment of your getaway truly extraordinary.",
+    link: "https://hotel-california-three.vercel.app/",
   },
 
   {
@@ -91,7 +93,7 @@ const cardData = [
     img: "./images/emotion.jpeg",
     description:
       "Analyze and interpret facial expressions and emotions in real time with top-notch emotion recognition software.",
-    link: "https://dnklheit.github.io/Emotionrec/",
+    link: "https://emotionrec.vercel.app/",
   },
   {
     id: "8",

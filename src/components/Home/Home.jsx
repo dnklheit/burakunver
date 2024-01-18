@@ -32,11 +32,7 @@ const Home = () => {
                 <h2>Hey, I'm Burak</h2>
               </div>
               <div className={styles["text-wrapper"]}>
-                <p>
-                  Frontend Developer <br />
-                  <span>&& </span>
-                  Data Scientist
-                </p>
+                <p>Frontend Developer</p>
               </div>
 
               <div className={styles.links}>

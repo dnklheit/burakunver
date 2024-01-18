@@ -1,50 +1,59 @@
-
 .react {
-    color: #61dafb;
-    background-color: #282c34;
+  color: #61dafb;
+  background-color: #282c34;
 }
 
 .vue {
-    color: #41b883;
-    background-color: #34495e;
+  color: #41b883;
+  background-color: #34495e;
 }
 
 .next {
-    color: #000000;
-    background-color: #ffffff;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .tailwind {
-    color: #38b2ac;
-    background-color: #2d3748;
+  color: #38b2ac;
+  background-color: #2d3748;
 }
 
 .sass {
-    color: #cc6699;
-    background-color: #ffffff;
+  color: #cc6699;
+  background-color: #ffffff;
 }
 
 .python {
-    color: #306998;
-    background-color: #f8f9fa;
+  color: #306998;
+  background-color: #f8f9fa;
 }
 
 .nlp {
-    color: #663399;
-    background-color: #f5e1ff;
+  color: #663399;
+  background-color: #f5e1ff;
 }
 
 .lda {
-    color: #211199;
-    background-color: #d9d2e9;
+  color: #211199;
+  background-color: #d9d2e9;
 }
 
 .seaborn {
-    color: #4F7CAC;
-    background-color: #364156;
+  color: #4f7cac;
+  background-color: #364156;
 }
 
 .matplot {
-    color: #FF4F00;
-    background-color: #2a2a2a;
+  color: #ff4f00;
+  background-color: #2a2a2a;
+}
+
+.html {
+  color: #dd4b25;
+  background-color: #2a2a2a;
+}
+
+.css {
+  color: #2d53e5;
+  background-color: #f8f9fa;
 }

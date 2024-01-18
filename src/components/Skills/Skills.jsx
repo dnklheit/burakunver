@@ -6,6 +6,8 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaBootstrap } from "react-icons/fa";
 import { FaLanguage, FaChartLine, FaChartBar } from "react-icons/fa";
 import { DiPython } from "react-icons/di";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
 import "./Skills.css";
 
 const Skills = () => {
@@ -54,6 +56,18 @@ const Skills = () => {
               <li>Bootstrap</li>
               <li>
                 <FaBootstrap className="bootstrap-icon" />
+              </li>
+            </ul>
+            <ul className="skill-item html">
+              <li>HTML</li>
+              <li>
+                <DiHtml5 className="html-icon" />
+              </li>
+            </ul>
+            <ul className="skill-item css">
+              <li>CSS</li>
+              <li>
+                <DiCss3 className="css-icon" />
               </li>
             </ul>
           </div>
