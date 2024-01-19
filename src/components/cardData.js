@@ -1,9 +1,7 @@
-import { FaReact, FaVuejs, FaSass } from "react-icons/fa";
-import { SiNextdotjs, SiTile } from "react-icons/si";
-import { SiNuxtdotjs } from "react-icons/si";
+import { FaReact, FaVuejs } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
 import { SiTailwindcss } from "react-icons/si";
-import { FaBootstrap } from "react-icons/fa";
-import { FaLanguage, FaChartLine, FaChartBar } from "react-icons/fa";
+import { FaLanguage } from "react-icons/fa";
 import { DiPython } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
@@ -63,15 +61,15 @@ const cardData = [
   },
   {
     id: "5",
-    title: "Millionare",
+    title: "Museek Music Website",
     technologies: [
-      <FaReact size={25} className="react " />,
-      <FaSass className="sass" size={25} />,
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
     ],
-    img: "./images/millionare.jpeg",
+    img: "./images/screenshot.png",
     description:
-      "Who Wants to Be a Millionaire ? Series of multiple-choice questions that each have four possible answers (A,B,C,D). The contestant must answer 15 of these questions correctly, one at a time, in order to win the million dollars. As soon as the contestant answers a question incorrectly, the game is over.",
-    link: "https://dnklheit.github.io/millionare/",
+      "Explore the rhythmic realm of Museek, your go-to for soulful tunes. Dive into curated genres, enhancing your auditory journey. Whether you're a casual listener or a music connoisseur, Museek caters to all.",
+    link: "https://music-website-sepia.vercel.app/",
   },
   {
     id: "6",
