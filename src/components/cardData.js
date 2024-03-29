@@ -149,8 +149,20 @@ const cardData = [
     description: "Ping website subscribe page.",
     link: "https://stay-updated-ten.vercel.app/",
   },
-  {
+    {
     id: "13",
+    title: "Huddle Landing Page",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/huddle-page.jpg",
+    description: "Ping website subscribe page.",
+    link: "https://stay-updated-ten.vercel.app/",
+  },
+  {
+  {
+    id: "14",
     title:
       "Harmony in Discord: Analyzing Borderline Personality Disorder Patterns in Metal Music Lyrics with NLP",
     technologies: [
@@ -163,7 +175,7 @@ const cardData = [
     link: "https://www.kaggle.com/code/buraknver/borderline-personality-disorder-metal-music-nlp",
   },
   {
-    id: "14",
+    id: "15",
     title: "Emotion Detection with FaceAPI",
     technologies: [],
     img: "./images/emotion.jpeg",
@@ -172,7 +184,7 @@ const cardData = [
     link: "https://emotionrec.vercel.app/",
   },
   {
-    id: "15",
+    id: "16",
     title: "Speech to Text AI Notebook",
     technologies: [<FaVuejs className="vue" size={25} />],
     img: "./images/speechtotext.png",
