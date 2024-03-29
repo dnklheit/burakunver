@@ -145,7 +145,7 @@ const cardData = [
       <DiHtml5 className="html" size={25} />,
       <DiCss3 className="css" size={25} />,
     ],
-    img: "./images/ping-launching-page.jpg",
+    img: "./images/newsletter.jpg",
     description: "Ping website subscribe page.",
     link: "https://stay-updated-ten.vercel.app/",
   },
