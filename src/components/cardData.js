@@ -149,7 +149,7 @@ const cardData = [
     description: "Ping website subscribe page.",
     link: "https://stay-updated-ten.vercel.app/",
   },
-    {
+  {
     id: "13",
     title: "Huddle Landing Page",
     technologies: [
@@ -158,9 +158,9 @@ const cardData = [
     ],
     img: "./images/huddle-page.jpg",
     description: "Ping website subscribe page.",
-    link: "https://stay-updated-ten.vercel.app/",
+    link: "https://huddle-page-six.vercel.app/",
   },
-  {
+
   {
     id: "14",
     title:
