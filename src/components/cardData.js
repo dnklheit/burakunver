@@ -66,13 +66,91 @@ const cardData = [
       <DiHtml5 className="html" size={25} />,
       <DiCss3 className="css" size={25} />,
     ],
-    img: "./images/screenshot.png",
+    img: "./images/player.png",
     description:
       "Explore the rhythmic realm of Museek, your go-to for soulful tunes. Dive into curated genres, enhancing your auditory journey. Whether you're a casual listener or a music connoisseur, Museek caters to all.",
     link: "https://music-website-sepia.vercel.app/",
   },
   {
     id: "6",
+    title: "Base Appereal One Page Demo",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/desktop-preview.jpg",
+    description: "Landing page for Base Appereal Fashion Store Website",
+    link: "https://base-appereal.vercel.app/",
+  },
+  {
+    id: "7",
+    title: "NFT Card Design",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/desktop-design.jpg",
+    description:
+      " Equilibrium NFT collection desings promotes balance and calm",
+    link: "https://nft-card-eight-liart.vercel.app/",
+  },
+  {
+    id: "8",
+    title: "Payment Component Demonstration",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/order.jpg",
+    description: "Payment page for Songify Music App",
+    link: "https://order-summary-fawn-eight.vercel.app/",
+  },
+  {
+    id: "9",
+    title: "Azure Team Builder",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/four-card.jpg",
+    description: "AI tools four cards info page",
+    link: "https://team-builder-azure.vercel.app/",
+  },
+  {
+    id: "10",
+    title: "Learn to Code Landing Page",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/four-card.jpg",
+    description: "Learn code sign up form and authentication page",
+    link: "https://learn-to-code-eight.vercel.app/",
+  },
+  {
+    id: "11",
+    title: "Ping Launching Page",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/ping-launching-page.jpg",
+    description: "Ping website launching page.",
+    link: "https://ping-loc.vercel.app/",
+  },
+  {
+    id: "12",
+    title: "Ping Subscribe Page",
+    technologies: [
+      <DiHtml5 className="html" size={25} />,
+      <DiCss3 className="css" size={25} />,
+    ],
+    img: "./images/ping-launching-page.jpg",
+    description: "Ping website subscribe page.",
+    link: "https://stay-updated-ten.vercel.app/",
+  },
+  {
+    id: "13",
     title:
       "Harmony in Discord: Analyzing Borderline Personality Disorder Patterns in Metal Music Lyrics with NLP",
     technologies: [
@@ -85,7 +163,7 @@ const cardData = [
     link: "https://www.kaggle.com/code/buraknver/borderline-personality-disorder-metal-music-nlp",
   },
   {
-    id: "7",
+    id: "14",
     title: "Emotion Detection with FaceAPI",
     technologies: [],
     img: "./images/emotion.jpeg",
@@ -94,7 +172,7 @@ const cardData = [
     link: "https://emotionrec.vercel.app/",
   },
   {
-    id: "8",
+    id: "15",
     title: "Speech to Text AI Notebook",
     technologies: [<FaVuejs className="vue" size={25} />],
     img: "./images/speechtotext.png",
